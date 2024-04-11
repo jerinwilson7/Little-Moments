@@ -2,7 +2,9 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <nav className='bg-black flex justify-between items-center m-4 rounded-md p-3 pl-6 pr-6'>
+    <nav className=''>
+      <div  className='bg-black flex justify-between items-center m-4 rounded-md p-3 pl-6 pr-6'>
+
         <div className=' flex items-center '>
             <ul className='text-white flex space-x-8'>
                 <li>Categories</li>
@@ -13,6 +15,7 @@ function NavBar() {
         <div>
             <button className='text-white'>Start Exploring</button>
         </div>
+      </div>
     </nav>
   )
 }
