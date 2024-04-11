@@ -1,11 +1,11 @@
 import React from 'react'
-import { BsShare } from 'react-icons/bs'
 import Review from '../Review/Review'
-import { AiOutlineHeartAiFillPlusCircle, AiFillStar, AiOutlineArrowRight, AiOutlineHeart } from 'react-icons/ai'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faCirclePlus, faShareNodes, faStar } from '@fortawesome/free-solid-svg-icons'
 
 function Destinations() {
     return (
-        <div className='pl-20 pt-5 pr-20 flex-row'>
+        <div className='pl-20 pt-5 pr-20 flex-row mb-5'>
             <div className='flex space-x-4'>
 
                 <div className="w-1/2 h-auto rounded-r-lg bg-cover bg-center p-4" style={{ backgroundImage: `url('https://images.pexels.com/photos/1134166/pexels-photo-1134166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')` }}>
@@ -14,7 +14,7 @@ function Destinations() {
                         <div className='items-center justify-end flex'>
                             <h2 className='bg-yellow-400 pl-2 pr-2 text-base border-2 border-black font-semibold rounded-xl'>Popular</h2>
                         </div>
-                    
+
                     </div>
 
                 </div>
@@ -37,11 +37,11 @@ function Destinations() {
                     </div>
                     <div className='flex space-x-4'>
                         <button className='bg-cream p-4 border-2 border-black rounded-md '>
-                            <AiOutlineHeart />
+                            <FontAwesomeIcon icon={faCirclePlus} className="h-8 w-8" />
                         </button>
 
                         <button className='bg-cream p-4 border-2 border-black rounded-md '>
-                            <BsShare />
+                        <FontAwesomeIcon icon={faShareNodes} className="h-8 w-8" />
                         </button>
 
                     </div>
@@ -77,7 +77,9 @@ function Destinations() {
                                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3>
                         </div>
 
-                        <div className='pl-5'><AiFillPlusCircle size={30} /></div>
+                        <div className='pl-5'>
+                            <FontAwesomeIcon icon={faCirclePlus} className="h-8 w-8" />
+                        </div>
                     </div>
                     <hr className='border border-black' />
                     <div className='flex justify-between' >
@@ -87,7 +89,9 @@ function Destinations() {
 
                         </div>
 
-                        <div className='pl-5'><AiFillPlusCircle size={30} /></div>
+                        <div className='pl-5'>
+                            <FontAwesomeIcon icon={faCirclePlus} className="h-8 w-8" />
+                        </div>
                     </div>
                     <hr className='border border-black' />
                     <div className='flex justify-between' >
@@ -97,7 +101,9 @@ function Destinations() {
 
                         </div>
 
-                        <div className='pl-5'><AiFillPlusCircle size={30} /></div>
+                        <div className='pl-5'>
+                            <FontAwesomeIcon icon={faCirclePlus} className="h-8 w-8" />
+                        </div>
                     </div>
                     <hr className='border border-black' />
                 </div>
@@ -120,26 +126,27 @@ function Destinations() {
                                 <div className='flex-col items-center justify-center flex-1'>
                                     <div className='flex items-center justify-center'>
 
-                                <h2><AiFillStar color='#e3f401 ' size={25}/></h2>
-                                <h2><AiFillStar color='#e3f401'size={25}/></h2>
-                                <h2><AiFillStar color='#e3f401'size={25}/></h2>
-                                <h2><AiFillStar color='#e3f401'size={25}/></h2>
-                                <h2><AiFillStar color='#e3f401'size={25}/></h2>
+                                        <h2><FontAwesomeIcon icon={faStar} className="h-5 w-6" color='#e3f401' /></h2>
+                                        <h2><FontAwesomeIcon icon={faStar} className="h-5 w-6" color='#e3f401' /></h2>
+                                        <h2><FontAwesomeIcon icon={faStar} className="h-5 w-6" color='#e3f401' /></h2>
+                                        <h2><FontAwesomeIcon icon={faStar} className="h-5 w-6" color='#e3f401' /></h2>
+                                        <h2><FontAwesomeIcon icon={faStar} className="h-5 w-6" color='#e3f401' /></h2>
+                                     
                                     </div>
 
-                                <h2 className='font-extrabold text-gray-300 text-lg'>1,289 reviews</h2>
+                                    <h2 className='font-extrabold text-gray-300 text-lg'>1,289 reviews</h2>
                                 </div>
                             </div>
                             <button className='bg-blue-600 p-5 rounded-xl border-2 shadow-sm shadow-black border-black flex items-center justify-center text-white font-bold space-x-3'>
                                 <h3>Write a review</h3>
-                                <h3><AiOutlineArrowRight/></h3>
-                                </button>
+                                <h3 className='items-center justify-center flex'><FontAwesomeIcon icon={faArrowRight} className="h-5 w-6" color='white' /></h3>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <hr className='border border-black mt-6' />
                 <div>
-                    <Review/>
+                    <Review />
                 </div>
             </div>
         </div>
