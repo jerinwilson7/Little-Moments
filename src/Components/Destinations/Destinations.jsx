@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillPlusCircle, AiFillStar, AiOutlineArrowRight, AiOutlineHeart } from 'react-icons/ai'
+import { AiFillPlusCircle, AiFillStar, AiOutlineArrowRight, AiOutlineHeart } from 'react-icons/ai';
 import { BsShare } from 'react-icons/bs'
 import Review from '../Review/Review'
 
