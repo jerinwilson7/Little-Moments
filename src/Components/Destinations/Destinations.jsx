@@ -1,7 +1,6 @@
 import React from 'react'
 import { AiFillPlusCircle, AiFillStar, AiOutlineArrowRight, AiOutlineHeart } from 'react-icons/ai'
 import { BsShare } from 'react-icons/bs'
-import ReviewCard from '../Review/ReviewCard'
 import Review from '../Review/Review'
 
 function Destinations() {
