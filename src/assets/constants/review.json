@@ -1,0 +1,24 @@
+ [
+    {
+      "username": "user1",
+      "location": "New York",
+      "title": "Great Experience",
+      "date": "May 12, 2021",
+      "review_description": "Had a wonderful time at the restaurant. The food was delicious, the ambiance was lovely, and the service was excellent."
+    },
+    {
+      "username": "user2",
+      "location": "Los Angeles",
+      "title": "Disappointing",
+      "date": "Jan 26, 2022",
+      "review_description": "Unfortunately, my experience was not up to par. The food was mediocre, and the service was slow."
+    },
+    {
+      "username": "user3",
+      "location": "Chicago",
+      "title": "Fantastic Place",
+      "date": "April 06, 2022",
+      "review_description": "I absolutely loved this restaurant! The food was outstanding, and the staff was very friendly and attentive."
+    }
+  ]
+  
